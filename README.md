@@ -3,8 +3,13 @@
 # DESCRIPTION
 
 Summarversa is a web-based platform that offers text, file, audio, and video summarization services.
+
+
 It utilizes advanced natural language processing (NLP) and machine learning (ML) algorithms to generate concise summaries from various input sources. 
+
+
 Users can easily summarize documents, articles, research papers, audio files, and video files, saving time and effort in extracting key information.
+
 
  # Features:
 Text Summarization: Users can input text and receive a summarized version of the content.
