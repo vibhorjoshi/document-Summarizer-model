@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summerversa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* CSS styles */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Summerversa</h1>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#video-summarize">VIDEO SCRIBE</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <!-- Home section content -->
+    </section>
+
+    <section id="services">
+        <!-- Services section content -->
+    </section>
+
+    <section id="text-summarization">
+        <h2>Text Summarization</h2>
+        <form action="/summarize" method="post">
+            <textarea name="text" placeholder="Enter Text..."></textarea>
+            <textarea name="summary" placeholder="Summarized Text..." readonly></textarea>
+            <button type="submit"><summary></summary></button>
+        </form>
+    </section>
+
+    <section id="file-summarization">
+        <h2>Research Paper and Article Summarization</h2>
+        <h4>Supported Formats: txt, pdf, docx, jpg, jpeg, png, gif, xlsx, xls</h4>
+        <form action="/summarize1" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".txt,.pdf,.docx,.jpg,.jpeg,.png,.gif,.xlsx,.xls" required>
+            <textarea name="summary1" placeholder="Summarized Text..." readonly></textarea>
+            <button type="submit"><Summary></Summary></button>
+        </form>
+    </section>
+
+    <section id="audio-summarization">
+        <h2>Audio File Summarization</h2>
+        <h4>Supported Formats: wav</h4>
+        <form action="/summarize2" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="audio/wav" required>
+            <textarea name="summary2" placeholder="Text in Audio..." readonly></textarea>
+            <button type="submit"><Summary></Summary></button>
+        </form>
+    </section>
+
+    <section id="video-summarization">
+        <h2>Video File Summarization</h2>
+        <h4>Supported Formats: mp4</h4>
+        <form action="/summarize3" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="video/mp4" required>
+            <textarea name="summary3" placeholder="Text in Video..." readonly></textarea>
+            <button type="submit"><Summary></Summary></button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form name='submit-to-google-sheet' action="submit.php" method="post">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Vibhor Joshi</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/vibhor-joshi-b32138243">Vibhor Joshi</a></p>
+        <p>Github: <a href="https://github.com/vibhorjoshi">vibhorjoshi</a></p>
+    </footer>
+
+    <script>
+        // JavaScript code
+    </script>
+</body>
+
+</html>
