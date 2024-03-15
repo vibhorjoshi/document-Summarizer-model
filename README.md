@@ -1,4 +1,6 @@
-# -SUMMAR VERSA  ||  Description -
+#  SUMMAR VERSA # 
+
+# Description -
 
 Summarversa is a web-based platform that offers text, file, audio, and video summarization services.
 
